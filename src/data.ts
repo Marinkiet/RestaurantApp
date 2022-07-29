@@ -1,4 +1,5 @@
 import { Food } from "./app/shared/models/food";
+import { Tag } from "./app/shared/tag";
 
 export const sample_foods: Food[] = [
   {
@@ -89,4 +90,15 @@ export const sample_foods: Food[] = [
     imageUrl: 'assets/fruitbowl.jpg',
     tags: ['Healthy', 'Fruit', 'Snack'],
   },
+]
+
+export const sample_tags:Tag[]=[
+  {name:'All',count:6},
+  {name:'FastFood',count:3},
+  {name:'Pizza',count:1},
+  {name:'Lunch',count:4},
+  {name:'SlowFood',count:5},
+  {name:'Healthy',count:1},
+  {name:'Fry',count:2},
+  {name:'Soup',count:1},
 ]

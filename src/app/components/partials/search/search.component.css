@@ -1,0 +1,31 @@
+div{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+input{
+  border-radius: 3px 0 0 3px ;
+  border: brown 1px solid;
+  height: 30px;
+  width: 30%;
+  padding: 5px;
+  font-size: 16px;
+  color: brown;
+  outline: none;
+  font-weight: 500;
+}
+div button{
+  color: white;
+  background-color: brown;
+  width: 70px;
+  font-size: 16px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  outline: none;
+  opacity: 0.8;
+}
+div button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
