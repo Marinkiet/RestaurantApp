@@ -15,7 +15,6 @@ export class FoodPageComponent implements OnInit {
     activatedRoute.params.subscribe((params)=>{
         if(params.id) //if not null of undefined
         this.food = this.foodService.getFoodById(params.id);
-        console.log(this.food.cookTime)
     })
    }
 
