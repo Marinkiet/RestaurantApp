@@ -1,0 +1,56 @@
+
+<app-title
+  title="Cart Page"
+  margin="16px 0 0 24px ">
+</app-title>
+<app-notfound></app-notfound>
+<div class="container">
+  <ul>
+    <li *ngFor="let cartItem of cart.items">
+
+      <div>
+        <img height="200px" [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
+      </div>
+
+      <div>
+        <abbr title="Go to {{cartItem.food.name}}"> <a routerLink="/food/{{cartItem.food.id}}">{{cartItem.food.name}}</a></abbr>
+
+      </div>
+
+      <div>
+        <input
+           type="number"
+           defaultValue="1"
+           min="1"
+           max="50"
+           #quantitySelect
+           [value]="cartItem.quantity"
+           (change)="changeQuantity(cartItem,quantitySelect.value)">
+      </div>
+
+      <div>
+        R {{cartItem.itemsPrice}}
+      </div>
+
+      <div>
+        <button class="remove-btn"
+        (click)="removeFromCart(cartItem)">Remove</button>
+      </div>
+
+
+    </li>
+  </ul>
+  <div>
+
+
+  <div class="checkout">
+    <div>
+      <div class="food-count"> {{cart.totalCount}}</div>
+      <hr>
+      <div class="food-price"> {{cart.totalPrice}}</div>
+    </div>
+    <a routerLink="/checkout">Proceed to Checkout</a>
+  </div>
+
+
+</div>

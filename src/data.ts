@@ -11,7 +11,7 @@ export const sample_foods: Food[] = [
     origins: ['italy'],
     stars: 4.5,
     imageUrl: 'assets/pizza.jpg',
-    tags: ['FastFood', 'Pizza', 'Lunch'],
+    tags: ['SlowFood', 'Pizza', 'Lunch'],
   },
   {
     id:'2',
@@ -93,8 +93,8 @@ export const sample_foods: Food[] = [
 ]
 
 export const sample_tags:Tag[]=[
-  {name:'All',count:6},
-  {name:'FastFood',count:3},
+  {name:'All',count:8},
+  {name:'FastFood',count:6},
   {name:'Pizza',count:1},
   {name:'Lunch',count:4},
   {name:'SlowFood',count:5},
