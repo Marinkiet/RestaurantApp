@@ -12,6 +12,11 @@ export class NotfoundComponent implements OnInit {
   visible=false;
   @Input()
   notFoundMessage = "Nothing Found!";
+  @Input()
+  routerLinkText = "Resturn to homepage";
+  @Input()
+  routerLink = "/";
+
   ngOnInit(): void {
   }
 

@@ -3,8 +3,11 @@
   title="Cart Page"
   margin="16px 0 0 24px ">
 </app-title>
-<app-notfound></app-notfound>
-<div class="container">
+<app-notfound
+[visible]="!cart || !cart.items.length"
+notFoundMessage = "Cart empty"
+></app-notfound>
+<div *ngIf="cart && cart.items.length" class="container">
   <ul>
     <li *ngFor="let cartItem of cart.items">
 

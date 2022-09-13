@@ -1,0 +1,20 @@
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-direction: column;
+}
+a{
+  color: brown;
+  margin-top: 5px;
+}
+a:hover{
+  color: white;
+  background-color: brown;
+  border-radius: 20px;
+  padding: 5px;
+}
+*{
+  font-size: 20px;
+}

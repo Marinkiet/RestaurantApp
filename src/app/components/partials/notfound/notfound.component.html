@@ -1,1 +1,4 @@
-<p>notfound works!</p>
+<div *ngIf="visible">
+  {{notFoundMessage}}
+  <a [routerLink]="routerLink">{{routerLinkText}}</a>
+</div>

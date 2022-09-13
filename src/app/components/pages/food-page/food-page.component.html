@@ -1,4 +1,10 @@
-<div class="container">
+<app-notfound
+[visible]="!food.id"
+routerLinkText="Go to Home"
+notFoundMessage="No food found">
+</app-notfound>
+
+<div *ngIf="food.id" class="container">
   <img [src]="food.imageUrl" [alt]="food.name"/>
 
   <div class="details">
