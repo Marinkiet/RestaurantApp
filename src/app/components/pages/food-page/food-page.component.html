@@ -1,10 +1,10 @@
 <app-notfound
-[visible]="!food.id"
+[visible]="!food"
 routerLinkText="Go to Home"
 notFoundMessage="No food found">
 </app-notfound>
 
-<div *ngIf="food.id" class="container">
+<div *ngIf="food" class="container">
   <img [src]="food.imageUrl" [alt]="food.name"/>
 
   <div class="details">
