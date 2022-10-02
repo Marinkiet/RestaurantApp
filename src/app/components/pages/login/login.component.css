@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+}
+.details{
+  width: 60px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
